@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">TechnicalAssistant</string>
+    <string name="math">Математика</string>
+    <string name="phys">Физика</string>
+    <string name="info">Информатика</string>
+</resources>

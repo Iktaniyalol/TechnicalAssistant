@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:theme="@android:style/Theme.Holo"
+    tools:context="iktaniyalol.ru.technicalassistant.MainActivity">
+
+    <Button
+        android:id="@+id/math"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/phys"
+        android:layout_alignStart="@+id/phys"
+        android:layout_marginBottom="52dp"
+        android:width="1000dp"
+        android:height="100dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="@string/math"
+        app:layout_constraintBottom_toTopOf="@+id/phys"
+        tools:layout_editor_absoluteX="0dp"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/phys"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="52dp"
+        android:width="1000dp"
+        android:height="100dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="@string/phys"
+        app:layout_constraintBottom_toTopOf="@+id/info"
+        tools:layout_editor_absoluteX="0dp"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phys"
+        android:layout_centerHorizontal="true"
+        android:width="1000dp"
+        android:height="100dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="@string/info"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="359dp"
+        tools:targetApi="lollipop" />
+</RelativeLayout>
