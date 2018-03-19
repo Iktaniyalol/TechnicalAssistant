@@ -1,25 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray"
     android:theme="@android:style/Theme.Holo"
-    tools:context="iktaniyalol.ru.technicalassistant.MainActivity">
+    tools:context="iktaniyalol.ru.technicalassistant.Math">
+
 
     <Button
-        android:id="@+id/math"
+        android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/phys"
-        android:layout_alignStart="@+id/phys"
-        android:layout_marginBottom="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/phys"
+        android:layout_marginTop="40dp"
         android:width="1000dp"
         android:height="100dp"
         android:backgroundTint="@android:color/holo_purple"
-        android:text="@string/math"
-        app:layout_constraintBottom_toTopOf="@+id/phys"
+        android:text="@string/info"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="lollipop" />
 
@@ -27,28 +26,29 @@
         android:id="@+id/phys"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:layout_marginBottom="52dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/math"
+        android:layout_marginTop="39dp"
         android:width="1000dp"
         android:height="100dp"
         android:backgroundTint="@android:color/holo_purple"
         android:text="@string/phys"
-        app:layout_constraintBottom_toTopOf="@+id/info"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="lollipop" />
 
     <Button
-        android:id="@+id/info"
+        android:id="@+id/math"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/phys"
-        android:layout_centerHorizontal="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
         android:width="1000dp"
         android:height="100dp"
         android:backgroundTint="@android:color/holo_purple"
-        android:text="@string/info"
+        android:text="@string/math"
         tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="359dp"
         tools:targetApi="lollipop" />
+
+
 </RelativeLayout>
