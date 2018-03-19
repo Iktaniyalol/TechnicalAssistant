@@ -3,4 +3,11 @@
     <string name="math">Математика</string>
     <string name="phys">Физика</string>
     <string name="info">Информатика</string>
+    <string name="theor">Алгебра</string>
+    <string name="theor2">Геометрия</string>
+    <string name="sqrt">Корень и степень числа</string>
+    <string name="uravnenie">Решение уравнений</string>
+    <string name="resh">Решение задач</string>
+    <string name="theor3">Теория</string>
+    <string name="per">Перевод в различные системы счисления</string>
 </resources>

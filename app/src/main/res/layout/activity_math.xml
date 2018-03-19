@@ -1,11 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray"
     android:theme="@android:style/Theme.Holo"
     tools:context="iktaniyalol.ru.technicalassistant.Math">
+
+
+    <Button
+        android:id="@+id/urav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sqrt"
+        android:layout_marginTop="45dp"
+        android:width="1000dp"
+        android:height="100dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="@string/uravnenie"
+        tools:layout_editor_absoluteX="0dp"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/sqrt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/theor2"
+        android:layout_marginTop="40dp"
+        android:width="1000dp"
+        android:height="100dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="@string/sqrt"
+        tools:layout_editor_absoluteX="0dp"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/theor2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/theor5"
+        android:layout_marginTop="39dp"
+        android:width="1000dp"
+        android:height="100dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="@string/theor2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:targetApi="lollipop" />
+
+    <Button
+        android:id="@+id/theor5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="36dp"
+        android:width="1000dp"
+        android:height="100dp"
+        android:backgroundTint="@android:color/holo_purple"
+        android:text="@string/theor"
+        tools:layout_editor_absoluteX="0dp"
+        tools:targetApi="lollipop" />
+
 
 </RelativeLayout>
