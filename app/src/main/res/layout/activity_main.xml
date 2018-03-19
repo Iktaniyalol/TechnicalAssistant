@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray"
     android:theme="@android:style/Theme.Holo"
-    tools:context="iktaniyalol.ru.technicalassistant.Math">
+    tools:context="iktaniyalol.ru.technicalassistant.MainActivity">
 
 
     <Button
@@ -17,7 +17,7 @@
         android:layout_marginTop="40dp"
         android:width="1000dp"
         android:height="100dp"
-        android:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/info"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="lollipop" />
@@ -31,7 +31,7 @@
         android:layout_marginTop="39dp"
         android:width="1000dp"
         android:height="100dp"
-        android:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/phys"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="lollipop" />
@@ -45,7 +45,7 @@
         android:layout_marginTop="36dp"
         android:width="1000dp"
         android:height="100dp"
-        android:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/math"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="lollipop" />

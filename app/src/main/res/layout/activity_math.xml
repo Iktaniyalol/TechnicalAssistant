@@ -17,7 +17,7 @@
         android:layout_marginTop="45dp"
         android:width="1000dp"
         android:height="100dp"
-        android:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/uravnenie"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="lollipop" />
@@ -31,7 +31,7 @@
         android:layout_marginTop="40dp"
         android:width="1000dp"
         android:height="100dp"
-        android:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/sqrt"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="lollipop" />
@@ -45,7 +45,7 @@
         android:layout_marginTop="39dp"
         android:width="1000dp"
         android:height="100dp"
-        android:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/theor2"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="lollipop" />
@@ -59,7 +59,7 @@
         android:layout_marginTop="36dp"
         android:width="1000dp"
         android:height="100dp"
-        android:backgroundTint="@android:color/holo_purple"
+        android:backgroundTint="@color/colorPrimaryDark"
         android:text="@string/theor"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="lollipop" />
