@@ -25,6 +25,12 @@
         <activity
             android:name=".Info"
             android:label="Информатика"></activity>
+        <activity
+            android:name=".TheorAlg"
+            android:label="Алгебра"></activity>
+        <activity
+            android:name=".TheorGem"
+            android:label="Геометрия"></activity>
     </application>
 
 </manifest>
