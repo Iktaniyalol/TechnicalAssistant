@@ -2,13 +2,9 @@ package iktaniyalol.ru.technicalassistant;
 
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.app.Activity;
 import android.view.View;
-import android.widget.TextView;
 import android.widget.Button;
-import android.view.View.OnClickListener;
 
 
 public class MainActivity extends FragmentActivity {
@@ -22,7 +18,7 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Math = findViewById(R.id.math);
-        Phys = findViewById(R.id.phys);
+        Phys = findViewById(R.id.theor2);
         Info = findViewById(R.id.info);
 
         View.OnClickListener OLMath = new View.OnClickListener() {
