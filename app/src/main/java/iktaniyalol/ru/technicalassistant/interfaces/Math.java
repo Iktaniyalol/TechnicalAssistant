@@ -1,11 +1,11 @@
-package iktaniyalol.ru.technicalassistant;
+package iktaniyalol.ru.technicalassistant.interfaces;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+
+import iktaniyalol.ru.technicalassistant.R;
 
 public class Math extends MainActivity {
     Button theor1, theor2;

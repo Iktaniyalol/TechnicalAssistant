@@ -1,7 +1,8 @@
-package iktaniyalol.ru.technicalassistant;
+package iktaniyalol.ru.technicalassistant.interfaces;
 
-import android.app.Activity;
 import android.os.Bundle;
+
+import iktaniyalol.ru.technicalassistant.R;
 
 public class Info extends MainActivity {
     @Override
