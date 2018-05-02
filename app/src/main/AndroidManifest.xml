@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="iktaniyalol.ru.technicalassistant">
+    package="iktaniyalol.ru.technicalassistant.interfaces">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Holo.Light">
         <activity
-            android:name=".interfaces.MainActivity"
+            android:name="MainActivity"
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,20 +17,23 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".interfaces.Math"
+            android:name="Math"
             android:label="Математика"></activity>
         <activity
-            android:name=".interfaces.Phys"
+            android:name="Phys"
             android:label="Физика"></activity>
         <activity
-            android:name=".interfaces.Info"
+            android:name="Info"
             android:label="Информатика"></activity>
         <activity
-            android:name=".interfaces.TheorAlg"
+            android:name="TheorAlg"
             android:label="Алгебра"></activity>
         <activity
-            android:name=".interfaces.TheorGem"
+            android:name="TheorGem"
             android:label="Геометрия"></activity>
+        <activity
+            android:name="KorenStepen"
+            android:label="Корень и степень числа"></activity>
     </application>
 
 </manifest>

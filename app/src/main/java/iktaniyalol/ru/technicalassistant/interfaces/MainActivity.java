@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import iktaniyalol.ru.technicalassistant.R;
+import iktaniyalol.ru.technicalassistant.interfaces.R;
 
 
 public class MainActivity extends FragmentActivity {
@@ -20,7 +20,7 @@ public class MainActivity extends FragmentActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         Math = findViewById(R.id.math);
-        Phys = findViewById(R.id.theor2);
+        Phys = findViewById(R.id.phys);
         Info = findViewById(R.id.info);
 
         View.OnClickListener OLMath = new View.OnClickListener() {
