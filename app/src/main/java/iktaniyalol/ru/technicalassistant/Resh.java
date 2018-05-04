@@ -7,9 +7,6 @@ public class Resh {
     }
 
     public static double koren(double number, double i) {
-        if (i <= 0) {
-            return 0;
-        }
         double itog = Math.pow(number, 1.0 / i);
         return itog;
     }
