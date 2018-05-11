@@ -8,7 +8,7 @@ import android.widget.Button;
 import iktaniyalol.ru.technicalassistant.interfaces.R;
 
 public class Math extends MainActivity {
-    Button theor1, theor2, step;
+    Button theor1, theor2, step, urav;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -16,6 +16,7 @@ public class Math extends MainActivity {
         theor1 = findViewById(R.id.theor1);
         theor2 = findViewById(R.id.theor2);
         step = findViewById(R.id.sqrt);
+        urav = findViewById(R.id.urav);
         View.OnClickListener OLTheor1 = new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(Math.this, TheorAlg.class);
@@ -34,9 +35,16 @@ public class Math extends MainActivity {
                 startActivity(intent);
             }
         };
+        View.OnClickListener OLUrav = new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(Math.this, Urav.class);
+                startActivity(intent);
+            }
+        };
         theor2.setOnClickListener(OLTheor2);
         theor1.setOnClickListener(OLTheor1);
         step.setOnClickListener(OLStep);
+        urav.setOnClickListener(OLUrav);
     }
 
 }

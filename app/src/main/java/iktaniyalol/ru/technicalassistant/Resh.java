@@ -11,7 +11,7 @@ public class Resh {
         return itog;
     }
 
-    public double[] uravkv(double a, double b, double c) {
+    public static double[] uravkv(double a, double b, double c) {
         double D = Math.pow(b, 2) - (4 * a * c);
         double x1 = (-b + Math.sqrt(D)) / (2 * a);
         double x2 = (-b - Math.sqrt(D)) / (2 * a);

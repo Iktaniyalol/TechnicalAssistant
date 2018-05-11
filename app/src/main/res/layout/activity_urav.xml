@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Urav"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:theme="@android:style/Theme.Holo"
+    tools:context="iktaniyalol.ru.technicalassistant.interfaces.KorenStepen">
+
+    <EditText
+        android:id="@+id/input2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/input3"
+        android:ems="20"
+        android:hint="@string/textur1"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/input4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/input2"
+        android:ems="20"
+        android:hint="@string/textur2"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:ems="20"
+        android:hint="@string/textur"
+        android:inputType="numberDecimal|numberSigned"
+        android:labelFor="@+id/input1" />
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.Holo.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:width="1000dp"
+        android:height="60dp"
+        android:text="@string/infourav"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/resultkv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input4"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/button2" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="24dp"
+        android:text="@string/textkv1"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/resultkv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_centerHorizontal="true"
+        android:text="0"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/resultkv"
+        android:layout_marginTop="28dp"
+        android:text="@string/textkv"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/resultkv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView2"
+        android:layout_alignBottom="@+id/textView2"
+        android:layout_alignStart="@+id/resultkv1"
+        android:text="0"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+</RelativeLayout>
