@@ -37,6 +37,10 @@
         <activity
             android:name="Urav"
             android:label="Решение уравнений"></activity>
+        <activity
+            android:name="Numbertosystem"
+            android:label="Перевод в различные системы счисления"></activity>
     </application>
+
 
 </manifest>
