@@ -15,10 +15,10 @@ public class Urav extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_korenstepen);
-        final EditText one = (EditText) findViewById(R.id.input);
-        final EditText two = (EditText) findViewById(R.id.input1);
-        final EditText three = (EditText) findViewById(R.id.input2);
+        setContentView(R.layout.activity_urav);
+        final EditText one = (EditText) findViewById(R.id.input3);
+        final EditText two = (EditText) findViewById(R.id.input2);
+        final EditText three = (EditText) findViewById(R.id.input4);
         final TextView result1 = findViewById(R.id.resultkv1);
         final TextView result2 = findViewById(R.id.resultkv2);
         result = findViewById(R.id.resultkv);

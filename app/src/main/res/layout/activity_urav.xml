@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@android:color/darker_gray"
     android:theme="@android:style/Theme.Holo"
-    tools:context="iktaniyalol.ru.technicalassistant.interfaces.KorenStepen">
+    tools:context="iktaniyalol.ru.technicalassistant.interfaces.Urav">
 
     <EditText
         android:id="@+id/input2"

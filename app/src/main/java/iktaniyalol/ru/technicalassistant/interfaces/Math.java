@@ -16,7 +16,7 @@ public class Math extends MainActivity {
         theor1 = findViewById(R.id.theor1);
         theor2 = findViewById(R.id.theor2);
         step = findViewById(R.id.sqrt);
-        urav = findViewById(R.id.urav);
+        urav = findViewById(R.id.uravbutton);
         View.OnClickListener OLTheor1 = new View.OnClickListener() {
             public void onClick(View view) {
                 Intent intent = new Intent(Math.this, TheorAlg.class);
