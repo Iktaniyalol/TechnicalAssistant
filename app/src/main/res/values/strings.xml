@@ -28,8 +28,8 @@
     <string name="textur2">Введите c</string>
     <string name="textur3">Введите k</string>
     <string name="textur4">Введите b</string>
-    <string name="textkv">Первый корень</string>
-    <string name="textkv1">Второй корень</string>
+    <string name="textkv">Первый корень:</string>
+    <string name="textkv1">Второй корень:</string>
     <string name="infosys" />
     <string name="infosystem">Его система счисления:</string>
     <string name="infosystem1">Перевести в:</string>
