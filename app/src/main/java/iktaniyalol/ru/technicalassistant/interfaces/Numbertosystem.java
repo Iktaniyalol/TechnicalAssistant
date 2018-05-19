@@ -27,7 +27,7 @@ public class Numbertosystem extends MainActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numbersys);
         result = findViewById(R.id.resultinfo);
-        public final EditText one = (EditText) findViewById(R.id.input3);
+        final EditText one = (EditText) findViewById(R.id.input3);
         final TextView resultinfo = findViewById(R.id.resultkv1);
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, data);
