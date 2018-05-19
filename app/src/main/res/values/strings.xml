@@ -30,4 +30,9 @@
     <string name="textur4">Введите b</string>
     <string name="textkv">Первый корень</string>
     <string name="textkv1">Второй корень</string>
+    <string name="infosys" />
+    <string name="infosystem">Его система счисления:</string>
+    <string name="infosystem1">Перевести в:</string>
+    <string name="infosystem3">Результат</string>
+    <string name="textsys">Введите число</string>
 </resources>

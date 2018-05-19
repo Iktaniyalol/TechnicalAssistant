@@ -18,5 +18,4 @@ public class Resh {
         double output[] = {x1, x2};
         return output;
     }
-
 }
