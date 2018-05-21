@@ -76,8 +76,10 @@ public class Numbertosystem extends MainActivity {
                 } else {
                     switch (number) {
                         case 0:
+                            resultinfo.setText(NumberSys.BintoSys(one.getText().toString(), number1));
                             break;
                         case 1:
+                            resultinfo.setText(NumberSys.OctaltoSys(one.getText().toString(), number1));
                             break;
                         case 2:
                             resultinfo.setText(NumberSys.DectoSys(one.getText().toString(), number1));
