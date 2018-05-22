@@ -34,7 +34,7 @@ public class Numbertosystem extends MainActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         Spinner spinner = (Spinner) findViewById(R.id.spinner);
         spinner.setAdapter(adapter);
-        spinner.setPrompt("Выберите систему счисления");
+        spinner.setPrompt("Выберите систему счисления:");
         spinner.setSelection(2);
 
 
@@ -42,7 +42,7 @@ public class Numbertosystem extends MainActivity {
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         Spinner spinner1 = (Spinner) findViewById(R.id.spinner2);
         spinner1.setAdapter(adapter1);
-        spinner1.setPrompt("Выберите систему счисления");
+        spinner1.setPrompt("Выберите систему счисления:");
         spinner1.setSelection(0);
 
 

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:theme="@android:style/Theme.Holo"
+    tools:context="iktaniyalol.ru.technicalassistant.interfaces.Numberdeysystem">
+
+    <TextView
+        android:id="@+id/infotext"
+        style="@android:style/Widget.Holo.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/input3"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:width="1000dp"
+        android:height="30dp"
+        android:text="@string/infosystem"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/infotext4"
+        style="@android:style/Widget.Holo.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/infotext"
+        android:layout_below="@id/input5"
+        android:layout_marginTop="9dp"
+        android:width="1000dp"
+        android:height="30dp"
+        android:text="@string/infosystem"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/infotext2"
+        style="@android:style/Widget.Holo.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinner4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="7dp"
+        android:width="1000dp"
+        android:height="30dp"
+        android:text="@string/deyinf"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/resultinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner3"
+        android:layout_centerHorizontal="true"
+        android:text="@string/button2" />
+
+    <EditText
+        android:id="@+id/input3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="8dp"
+        android:ems="20"
+        android:hint="@string/infonumb1"
+        android:inputType="textCapCharacters|textPersonName"
+        android:labelFor="@+id/input1" />
+
+    <EditText
+        android:id="@+id/input5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/spinner5"
+        android:layout_marginTop="9dp"
+        android:ems="20"
+        android:hint="@string/infonumbsys2"
+        android:inputType="textCapCharacters|textPersonName"
+        android:labelFor="@+id/input1" />
+
+    <Spinner
+        android:id="@+id/spinner5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/infotext"
+        android:layout_marginTop="9dp"></Spinner>
+
+    <Spinner
+        android:id="@+id/spinner4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/infotext4"
+        android:layout_marginTop="9dp"></Spinner>
+
+    <Spinner
+        android:id="@+id/spinner3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/infotext2"
+        android:layout_marginTop="9dp"></Spinner>
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/infotext2"
+        android:layout_below="@+id/spinner6"
+        android:text="@string/infostep3"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/resultdey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView6"
+        android:layout_alignBottom="@+id/textView6"
+        android:layout_marginStart="14dp"
+        android:layout_toEndOf="@+id/textView6"
+        android:text="0"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/resultinfo" />
+
+</RelativeLayout>

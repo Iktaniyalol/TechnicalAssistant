@@ -35,4 +35,8 @@
     <string name="infosystem1">Перевести в:</string>
     <string name="infosystem3">Результат</string>
     <string name="textsys">Введите число</string>
+    <string name="dey">Действия между числами в различных системах счисления</string>
+    <string name="infonumb1">Введите первое число</string>
+    <string name="infonumbsys2">Введите второе число</string>
+    <string name="deyinf">Действие:</string>
 </resources>

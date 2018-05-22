@@ -22,5 +22,12 @@ public class Info extends MainActivity {
             }
         };
         sys.setOnClickListener(OLSys);
+        View.OnClickListener OLResh = new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(Info.this, Numberdeysystem.class);
+                startActivity(intent);
+            }
+        };
+        resh.setOnClickListener(OLResh);
     }
 }

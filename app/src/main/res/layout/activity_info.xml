@@ -18,7 +18,7 @@
         android:width="1000dp"
         android:height="100dp"
         android:backgroundTint="@color/colorPrimaryDark"
-        android:text="@string/resh"
+        android:text="@string/dey"
         app:layout_constraintBottom_toTopOf="@+id/sys"
         tools:layout_editor_absoluteX="0dp"
         tools:targetApi="lollipop" />

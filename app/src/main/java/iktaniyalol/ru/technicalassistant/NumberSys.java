@@ -161,4 +161,70 @@ public class NumberSys {
         }
         return znak + result;
     }
+
+    public static String deystvia(String one, String two, int sys, int args, int sys1, int args1, int dey, int sys2) {
+        int result = 0;
+        String returnnum = "";
+        String znak = "";
+        String[] digits = {"01-", "01234567-", "0123456789-", "0123456789ABCDEF-"};
+        for (int i = 0; i < one.length(); i++) {
+            char c = one.charAt(i);
+            if (!digits[args].contains(c + "")) {
+                znak = "";
+                returnnum = "0";
+                one = "0";
+                two = "0";
+                break;
+            }
+        }
+        for (int i = 0; i < two.length(); i++) {
+            char c = two.charAt(i);
+            if (!digits[args1].contains(c + "")) {
+                znak = "";
+                returnnum = "0";
+                one = "0";
+                two = "0";
+                break;
+            }
+        }
+        int num = Integer.parseInt(one, sys);
+        int num1 = Integer.parseInt(two, sys1);
+        switch (dey) {
+            case 0:
+                result = num + num1;
+                break;
+            case 1:
+                result = num - num1;
+                break;
+            case 2:
+                result = num * num1;
+                break;
+            case 3:
+                if (num1 == 0) {
+                    result = 0;
+                } else {
+                    result = num / num1;
+                }
+                break;
+        }
+        if (result < 0) {
+            znak = "-";
+            result = Math.abs(result);
+        }
+        switch (sys2) {
+            case 0:
+                returnnum = Integer.toBinaryString(result).toUpperCase();
+                break;
+            case 1:
+                returnnum = Integer.toString(result).toUpperCase();
+                break;
+            case 2:
+                returnnum = Integer.toOctalString(result).toUpperCase();
+                break;
+            case 3:
+                returnnum = Integer.toHexString(result).toUpperCase();
+                break;
+        }
+        return znak + returnnum;
+    }
 }

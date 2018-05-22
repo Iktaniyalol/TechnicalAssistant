@@ -40,6 +40,9 @@
         <activity
             android:name="Numbertosystem"
             android:label="Перевод в различные системы счисления"></activity>
+        <activity
+            android:name="Numberdeysystem"
+            android:label="Действия между числами в различных системах счисления"></activity>
     </application>
 
 
