@@ -114,6 +114,7 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/infotext2"
         android:layout_below="@+id/spinner6"
+        android:layout_marginTop="5dp"
         android:text="@string/infostep3"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="18sp" />

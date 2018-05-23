@@ -1,0 +1,25 @@
+@startuml
+
+class MainActivity
+class Math
+class Phys
+class Info
+class Urav
+class KorenStepen
+class TheorAlg
+class TheorGem
+class Numberdeysystem
+class Numbertosystem
+
+MainActivity <|-- Math
+MainActivity <|-- Phys
+MainActivity <|-- Info
+
+Math <|-- KorenStepen
+Math <|-- Urav
+Math <|-- TheorAlg
+Math <|-- TheorGem
+
+Info <|-- Numbertosystem
+Info <|-- Numberdeysystem
+@enduml

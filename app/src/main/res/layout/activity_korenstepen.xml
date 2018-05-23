@@ -95,6 +95,7 @@
         android:layout_alignStart="@+id/textView4"
         android:layout_below="@+id/resultkr"
         android:layout_marginTop="14dp"
+        android:width="200dp"
         android:text="@string/step"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="18sp" />
@@ -106,7 +107,7 @@
         android:layout_alignStart="@+id/textView6"
         android:layout_below="@+id/textView6"
         android:layout_marginTop="16dp"
-        android:width="66dp"
+        android:width="70dp"
         android:text="@string/koren"
         android:textColor="@android:color/holo_blue_dark"
         android:textSize="18sp" />
