@@ -18,4 +18,9 @@ public class Resh {
         double output[] = {x1, x2};
         return output;
     }
+
+    public static double logarifm(double a, double b) {
+        double result = Math.log(b) / Math.log(a);
+        return result;
+    }
 }

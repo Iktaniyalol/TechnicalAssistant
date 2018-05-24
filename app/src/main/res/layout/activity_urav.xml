@@ -50,7 +50,7 @@
         android:width="1000dp"
         android:height="60dp"
         android:text="@string/infourav"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp" />
 
     <Button
@@ -71,7 +71,7 @@
         android:layout_below="@+id/textView2"
         android:layout_marginTop="24dp"
         android:text="@string/textkv1"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp" />
 
     <TextView
@@ -94,7 +94,7 @@
         android:layout_below="@+id/resultkv"
         android:layout_marginTop="28dp"
         android:text="@string/textkv"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp" />
 
     <TextView

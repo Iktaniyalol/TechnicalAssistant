@@ -41,7 +41,7 @@
         android:width="1000dp"
         android:height="30dp"
         android:text="@string/infostep1"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp" />
 
     <EditText
@@ -76,7 +76,7 @@
         android:width="1000dp"
         android:height="60dp"
         android:text="@string/infostep0"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="24sp" />
 
     <Button
@@ -97,7 +97,7 @@
         android:layout_marginTop="14dp"
         android:width="200dp"
         android:text="@string/step"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp" />
 
     <TextView
@@ -109,7 +109,7 @@
         android:layout_marginTop="16dp"
         android:width="70dp"
         android:text="@string/koren"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp" />
 
     <TextView

@@ -17,17 +17,8 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="Math"
-            android:label="Математика"></activity>
-        <activity
-            android:name="Phys"
-            android:label="Физика"></activity>
-        <activity
-            android:name="Info"
-            android:label="Информатика"></activity>
-        <activity
-            android:name="TheorAlg"
-            android:label="Алгебра"></activity>
+            android:name=".Logarifm"
+            android:label="Логарифмы"></activity>
         <activity
             android:name="TheorGem"
             android:label="Геометрия"></activity>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/darker_gray"
+    android:theme="@android:style/Theme.Holo"
+    tools:context="iktaniyalol.ru.technicalassistant.interfaces.Logarifm">
+
+    <TextView
+        android:id="@+id/textView"
+        style="@android:style/Widget.Holo.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="16dp"
+        android:width="1000dp"
+        android:height="60dp"
+        android:text="@string/infolog"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/resultkr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="@string/button2" />
+
+    <EditText
+        android:id="@+id/input1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/input"
+        android:layout_marginTop="14dp"
+        android:ems="20"
+        android:hint="@string/inp"
+        android:inputType="numberDecimal|numberSigned" />
+
+    <EditText
+        android:id="@+id/input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView"
+        android:ems="20"
+        android:hint="@string/text1"
+        android:inputType="numberDecimal|numberSigned"
+        android:labelFor="@+id/input1" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView"
+        android:layout_below="@+id/input1"
+        android:layout_marginTop="96dp"
+        android:width="92dp"
+        android:text="@string/Log"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/resultkr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView7"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_marginStart="15dp"
+        android:layout_toEndOf="@+id/textView7"
+        android:text="0"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+</RelativeLayout>

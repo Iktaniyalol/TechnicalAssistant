@@ -6,43 +6,64 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import iktaniyalol.ru.technicalassistant.interfaces.R;
-
 
 public class MainActivity extends FragmentActivity {
 
-    Button Math;
-    Button Phys;
-    Button Info;
+    Button logar, theor2, step, urav, sys, resh;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Math = findViewById(R.id.math);
-        Phys = findViewById(R.id.phys);
-        Info = findViewById(R.id.info);
+        logar = findViewById(R.id.logarif);
+        theor2 = findViewById(R.id.theor2);
+        step = findViewById(R.id.sqrt);
+        urav = findViewById(R.id.uravbutton);
+        sys = findViewById(R.id.sys);
+        resh = findViewById(R.id.resh4);
 
-        View.OnClickListener OLMath = new View.OnClickListener() {
+        View.OnClickListener OLLog = new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Math.class);
+                Intent intent = new Intent(MainActivity.this, Logarifm.class);
                 startActivity(intent);
             }
         };
-        View.OnClickListener OLPhys = new View.OnClickListener() {
+        View.OnClickListener OLTheor2 = new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Phys.class);
+                Intent intent = new Intent(MainActivity.this, TheorGem.class);
                 startActivity(intent);
             }
         };
-        View.OnClickListener OLInfo = new View.OnClickListener() {
+        View.OnClickListener OLStep = new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Info.class);
+                Intent intent = new Intent(MainActivity.this, KorenStepen.class);
                 startActivity(intent);
             }
         };
-        Math.setOnClickListener(OLMath);
-        Phys.setOnClickListener(OLPhys);
-        Info.setOnClickListener(OLInfo);
+        View.OnClickListener OLUrav = new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Urav.class);
+                startActivity(intent);
+            }
+        };
+
+        View.OnClickListener OLSys = new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Numbertosystem.class);
+                startActivity(intent);
+            }
+        };
+        View.OnClickListener OLResh = new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Numberdeysystem.class);
+                startActivity(intent);
+            }
+        };
+        sys.setOnClickListener(OLSys);
+        resh.setOnClickListener(OLResh);
+        theor2.setOnClickListener(OLTheor2);
+        logar.setOnClickListener(OLLog);
+        step.setOnClickListener(OLStep);
+        urav.setOnClickListener(OLUrav);
     }
 }

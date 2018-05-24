@@ -20,7 +20,7 @@
         android:width="1000dp"
         android:height="30dp"
         android:text="@string/infosystem"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp" />
 
     <TextView
@@ -34,7 +34,7 @@
         android:width="1000dp"
         android:height="30dp"
         android:text="@string/infosystem1"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp" />
 
     <Button
@@ -73,7 +73,7 @@
         android:layout_below="@+id/resultinfo"
         android:layout_marginTop="23dp"
         android:text="@string/infostep3"
-        android:textColor="@android:color/holo_blue_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="18sp" />
 
     <TextView
