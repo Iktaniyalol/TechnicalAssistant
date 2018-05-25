@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:background="#edecec"
     android:theme="@android:style/Theme.Holo"
     tools:context="iktaniyalol.ru.technicalassistant.interfaces.MainActivity">
 
@@ -19,7 +19,8 @@
             android:layout_marginTop="45dp"
             android:width="1000dp"
             android:height="100dp"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/holo_blue_light"
             android:text="@string/uravnenie"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="lollipop" />
@@ -31,7 +32,8 @@
             android:layout_marginTop="20dp"
             android:width="1000dp"
             android:height="100dp"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/holo_blue_light"
             android:text="@string/sqrt"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="lollipop" />
@@ -43,7 +45,8 @@
             android:layout_marginTop="20dp"
             android:width="1000dp"
             android:height="100dp"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/holo_blue_light"
             android:text="@string/theor"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="lollipop" />
@@ -55,7 +58,8 @@
             android:layout_marginTop="20dp"
             android:width="1000dp"
             android:height="100dp"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/holo_blue_light"
             android:text="@string/dey"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="lollipop" />
@@ -67,7 +71,8 @@
             android:layout_marginTop="20dp"
             android:width="1000dp"
             android:height="100dp"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/holo_blue_light"
             android:text="@string/per"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="lollipop" />
@@ -79,7 +84,8 @@
             android:layout_marginTop="20dp"
             android:width="1000dp"
             android:height="100dp"
-            android:backgroundTint="@color/colorPrimaryDark"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/holo_blue_light"
             android:text="@string/theor2"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="lollipop" />

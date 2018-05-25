@@ -4,7 +4,7 @@
     android:id="@+id/korenstep"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:background="#edecec"
     android:theme="@android:style/Theme.Holo"
     tools:context="iktaniyalol.ru.technicalassistant.interfaces.KorenStepen">
 
@@ -14,10 +14,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/input3"
+        android:layout_marginTop="10dp"
         android:ems="20"
         android:hint="@string/text2"
         android:inputType="numberDecimal|numberSigned"
-        android:text="@string/_2" />
+        android:text="@string/_2"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/darker_gray" />
 
     <EditText
         android:id="@+id/input3"
@@ -25,10 +30,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView"
+        android:layout_marginTop="20dp"
         android:ems="20"
         android:hint="@string/text1"
         android:inputType="numberDecimal|numberSigned"
-        android:labelFor="@+id/input1" />
+        android:labelFor="@+id/input1"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/darker_gray" />
 
     <TextView
         android:id="@+id/textView4"
@@ -41,7 +50,8 @@
         android:width="1000dp"
         android:height="30dp"
         android:text="@string/infostep1"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
         android:textSize="24sp" />
 
     <EditText
@@ -50,10 +60,15 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/input"
+        android:layout_marginTop="10dp"
         android:ems="20"
         android:hint="@string/text2"
         android:inputType="numberDecimal|numberSigned"
-        android:text="@string/_2" />
+        android:text="@string/_2"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/darker_gray" />
 
     <EditText
         android:id="@+id/input"
@@ -61,10 +76,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/textView4"
+        android:layout_marginTop="20dp"
         android:ems="20"
         android:hint="@string/text1"
         android:inputType="numberDecimal|numberSigned"
-        android:labelFor="@+id/input1" />
+        android:labelFor="@+id/input1"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/darker_gray" />
 
     <TextView
         android:id="@+id/textView"
@@ -76,7 +95,8 @@
         android:width="1000dp"
         android:height="60dp"
         android:text="@string/infostep0"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
         android:textSize="24sp" />
 
     <Button
@@ -85,7 +105,9 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/input"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="44dp"
+        android:layout_marginTop="50dp"
+        android:width="100dp"
+        android:background="@android:color/darker_gray"
         android:text="@string/button2" />
 
     <TextView
@@ -97,7 +119,8 @@
         android:layout_marginTop="14dp"
         android:width="200dp"
         android:text="@string/step"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
         android:textSize="18sp" />
 
     <TextView
@@ -109,7 +132,8 @@
         android:layout_marginTop="16dp"
         android:width="70dp"
         android:text="@string/koren"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
         android:textSize="18sp" />
 
     <TextView
@@ -121,7 +145,7 @@
         android:layout_marginStart="14dp"
         android:layout_toEndOf="@+id/textView6"
         android:text="0"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/black"
         android:textSize="18sp" />
 
     <TextView
@@ -133,7 +157,7 @@
         android:layout_marginStart="15dp"
         android:layout_toEndOf="@+id/textView7"
         android:text="0"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/black"
         android:textSize="18sp" />
 
 </RelativeLayout>

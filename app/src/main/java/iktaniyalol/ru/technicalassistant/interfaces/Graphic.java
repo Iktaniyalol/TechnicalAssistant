@@ -2,12 +2,12 @@ package iktaniyalol.ru.technicalassistant.interfaces;
 
 import android.os.Bundle;
 
-import iktaniyalol.ru.technicalassistant.interfaces.R;
 
-public class TheorGem extends MainActivity {
+public class Graphic extends MainActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_theorgem);
+        setContentView(R.layout.activity_graph);
+
     }
 }

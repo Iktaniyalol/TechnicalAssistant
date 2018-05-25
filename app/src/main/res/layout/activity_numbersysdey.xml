@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/darker_gray"
+    android:background="#edecec"
     android:theme="@android:style/Theme.Holo"
     tools:context="iktaniyalol.ru.technicalassistant.interfaces.Numberdeysystem">
 
@@ -20,7 +20,8 @@
         android:width="1000dp"
         android:height="30dp"
         android:text="@string/infosystem"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
         android:textSize="18sp" />
 
     <TextView
@@ -34,7 +35,8 @@
         android:width="1000dp"
         android:height="30dp"
         android:text="@string/infosystem"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
         android:textSize="18sp" />
 
     <TextView
@@ -49,7 +51,8 @@
         android:width="1000dp"
         android:height="30dp"
         android:text="@string/deyinf"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
         android:textSize="18sp" />
 
     <Button
@@ -58,6 +61,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/spinner3"
         android:layout_centerHorizontal="true"
+        android:background="@android:color/darker_gray"
+        android:width="100dp"
         android:text="@string/button2" />
 
     <EditText
@@ -66,11 +71,16 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="10dp"
         android:ems="20"
         android:hint="@string/infonumb1"
-        android:inputType="textCapCharacters|textPersonName"
-        android:labelFor="@+id/input1" />
+        android:inputType="textCapCharacters"
+        android:labelFor="@+id/input1"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/darker_gray"
+        android:textStyle="italic" />
 
     <EditText
         android:id="@+id/input5"
@@ -81,7 +91,12 @@
         android:layout_marginTop="9dp"
         android:ems="20"
         android:hint="@string/infonumbsys2"
-        android:inputType="textCapCharacters|textPersonName"
+        android:inputType="textCapCharacters"
+        android:textColor="@android:color/black"
+        android:textColorHighlight="@android:color/darker_gray"
+        android:textColorHint="@android:color/black"
+        android:textColorLink="@android:color/darker_gray"
+        android:textStyle="italic"
         android:labelFor="@+id/input1" />
 
     <Spinner
@@ -90,7 +105,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/infotext"
-        android:layout_marginTop="9dp"></Spinner>
+        android:layout_marginTop="9dp">
+
+    </Spinner>
 
     <Spinner
         android:id="@+id/spinner4"
@@ -98,7 +115,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/infotext4"
-        android:layout_marginTop="9dp"></Spinner>
+        android:layout_marginTop="9dp">
+
+    </Spinner>
 
     <Spinner
         android:id="@+id/spinner3"
@@ -106,7 +125,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_below="@+id/infotext2"
-        android:layout_marginTop="9dp"></Spinner>
+        android:layout_marginTop="9dp">
+
+    </Spinner>
 
     <TextView
         android:id="@+id/textView6"
@@ -116,7 +137,8 @@
         android:layout_below="@+id/spinner6"
         android:layout_marginTop="5dp"
         android:text="@string/infostep3"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold"
         android:textSize="18sp" />
 
     <TextView
@@ -128,7 +150,7 @@
         android:layout_marginStart="14dp"
         android:layout_toEndOf="@+id/textView6"
         android:text="0"
-        android:textColor="@color/colorPrimaryDark"
+        android:textColor="@android:color/black"
         android:textSize="18sp" />
 
     <Spinner

@@ -30,7 +30,7 @@ public class MainActivity extends FragmentActivity {
         };
         View.OnClickListener OLTheor2 = new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, TheorGem.class);
+                Intent intent = new Intent(MainActivity.this, Graphic.class);
                 startActivity(intent);
             }
         };

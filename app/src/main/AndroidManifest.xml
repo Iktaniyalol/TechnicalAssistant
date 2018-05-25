@@ -20,7 +20,7 @@
             android:name=".Logarifm"
             android:label="Логарифмы"></activity>
         <activity
-            android:name="TheorGem"
+            android:name=".Graphic"
             android:label="Геометрия"></activity>
         <activity
             android:name="KorenStepen"

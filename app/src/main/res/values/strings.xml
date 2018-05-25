@@ -20,7 +20,7 @@
     <string name="infostep3">Результат:</string>
     <string name="koren">Корень:</string>
     <string name="step">Возведение в степень:</string>
-    <string name="infourav">Квадратное уравнение ax^2+xb+c = 0</string>
+    <string name="infourav">Квадратное уравнение ax²+xb+c = 0</string>
     <string name="infourav1">Линейное уравнение kx+b = c</string>
     <string name="textur">Введите a</string>
     <string name="textur1">Введите b</string>
