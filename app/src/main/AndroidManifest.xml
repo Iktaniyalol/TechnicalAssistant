@@ -21,7 +21,7 @@
             android:label="Логарифмы"></activity>
         <activity
             android:name=".Graphic"
-            android:label="Геометрия"></activity>
+            android:label="Графики функции"></activity>
         <activity
             android:name="KorenStepen"
             android:label="Корень и степень числа"></activity>
@@ -34,6 +34,15 @@
         <activity
             android:name="Numberdeysystem"
             android:label="Действия между числами в различных системах счисления"></activity>
+        <activity
+            android:name="Math"
+            android:label="Математика"></activity>
+        <activity
+            android:name="Info"
+            android:label="Информатика"></activity>
+        <activity
+            android:name="Test"
+            android:label="Тесты"></activity>
     </application>
 
 

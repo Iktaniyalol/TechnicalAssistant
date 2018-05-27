@@ -16,7 +16,7 @@ import android.widget.Toast;
 import iktaniyalol.ru.technicalassistant.NumberSys;
 import iktaniyalol.ru.technicalassistant.Resh;
 
-public class Numbertosystem extends MainActivity {
+public class Numbertosystem extends Info {
     String[] data = {"двоичная", "восьмиричная", "десятичная", "шестнадцатиричная"};
     String[] data1 = {"двоичная", "восьмиричная", "десятичная", "шестнадцатиричная"};
     Button result;

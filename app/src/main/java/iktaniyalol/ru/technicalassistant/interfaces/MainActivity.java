@@ -9,61 +9,31 @@ import android.widget.Button;
 
 public class MainActivity extends FragmentActivity {
 
-    Button logar, theor2, step, urav, sys, resh;
+    Button math, info;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        logar = findViewById(R.id.logarif);
-        theor2 = findViewById(R.id.theor2);
-        step = findViewById(R.id.sqrt);
-        urav = findViewById(R.id.uravbutton);
-        sys = findViewById(R.id.sys);
-        resh = findViewById(R.id.resh4);
+        math = findViewById(R.id.math);
+        info = findViewById(R.id.info);
 
-        View.OnClickListener OLLog = new View.OnClickListener() {
+
+        View.OnClickListener OLMath = new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Logarifm.class);
+                Intent intent = new Intent(MainActivity.this, Math.class);
                 startActivity(intent);
             }
         };
-        View.OnClickListener OLTheor2 = new View.OnClickListener() {
+        View.OnClickListener OLInfo = new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Graphic.class);
-                startActivity(intent);
-            }
-        };
-        View.OnClickListener OLStep = new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, KorenStepen.class);
-                startActivity(intent);
-            }
-        };
-        View.OnClickListener OLUrav = new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Urav.class);
+                Intent intent = new Intent(MainActivity.this, Info.class);
                 startActivity(intent);
             }
         };
 
-        View.OnClickListener OLSys = new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Numbertosystem.class);
-                startActivity(intent);
-            }
-        };
-        View.OnClickListener OLResh = new View.OnClickListener() {
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, Numberdeysystem.class);
-                startActivity(intent);
-            }
-        };
-        sys.setOnClickListener(OLSys);
-        resh.setOnClickListener(OLResh);
-        theor2.setOnClickListener(OLTheor2);
-        logar.setOnClickListener(OLLog);
-        step.setOnClickListener(OLStep);
-        urav.setOnClickListener(OLUrav);
+        math.setOnClickListener(OLMath);
+        info.setOnClickListener(OLInfo);
+
     }
 }

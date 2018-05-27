@@ -2,10 +2,11 @@
     <string name="app_name">TechnicalAssistant</string>
     <string name="math">Математика</string>
     <string name="info">Информатика</string>
+    <string name="test">Тесты (в разработке)</string>
     <string name="theor">Логарифмы</string>
-    <string name="theor2">В разработке</string>
+    <string name="theor2">Графики функции (в разработке)</string>
     <string name="sqrt">Корень и степень числа</string>
-    <string name="uravnenie">Решение уравнений</string>
+    <string name="uravnenie">Решение квадратного уравнения</string>
     <string name="resh">Решение задач</string>
     <string name="theor3">Теория</string>
     <string name="per">Перевод в различные системы счисления</string>

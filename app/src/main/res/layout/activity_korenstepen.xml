@@ -103,12 +103,12 @@
         android:id="@+id/resultkr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/input"
+        android:layout_below="@+id/input1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-        android:width="100dp"
-        android:background="@android:color/darker_gray"
-        android:text="@string/button2" />
+        android:layout_marginTop="16dp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button2"
+        tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/textView6"

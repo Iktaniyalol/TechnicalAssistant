@@ -79,9 +79,9 @@
         android:layout_below="@+id/input4"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:width="100dp"
-        android:background="@android:color/darker_gray"
-        android:text="@string/button2" />
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button2"
+        tools:targetApi="lollipop" />
 
     <TextView
         android:id="@+id/textView6"

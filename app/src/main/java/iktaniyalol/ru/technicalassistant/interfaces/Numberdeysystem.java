@@ -11,7 +11,7 @@ import android.widget.TextView;
 
 import iktaniyalol.ru.technicalassistant.NumberSys;
 
-public class Numberdeysystem extends MainActivity {
+public class Numberdeysystem extends Info {
     String[] data = {"двоичная", "восьмиричная", "десятичная", "шестнадцатиричная"};
     String[] data1 = {"двоичная", "восьмиричная", "десятичная", "шестнадцатиричная"};
     String[] data2 = {"сложение", "вычитание", "умножение", "деление"};

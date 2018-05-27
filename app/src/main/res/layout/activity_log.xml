@@ -27,12 +27,12 @@
         android:id="@+id/resultkr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/input1"
+        android:layout_below="@id/input1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:width="100dp"
-        android:background="@android:color/darker_gray"
-        android:text="@string/button2" />
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button2"
+        tools:targetApi="lollipop" />
 
     <EditText
         android:id="@+id/input1"
@@ -73,11 +73,11 @@
         android:layout_alignStart="@+id/textView"
         android:layout_below="@+id/input1"
         android:layout_marginTop="96dp"
-        android:width="92dp"
+        android:width="95dp"
         android:text="@string/Log"
         android:textColor="@android:color/holo_blue_light"
-        android:textStyle="bold"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/resultkr1"

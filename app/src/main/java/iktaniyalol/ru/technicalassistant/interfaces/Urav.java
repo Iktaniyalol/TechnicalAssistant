@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import iktaniyalol.ru.technicalassistant.Resh;
 
-public class Urav extends MainActivity {
+public class Urav extends Math {
     Button result;
     public double inp1, inp2, inp3;
 

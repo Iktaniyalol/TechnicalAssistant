@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import iktaniyalol.ru.technicalassistant.Resh;
 
-public class Logarifm extends MainActivity {
+public class Logarifm extends Math {
     Button result;
     public double inp1, inp2;
     @Override

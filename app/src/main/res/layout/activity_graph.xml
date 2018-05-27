@@ -3,15 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="#edecec"
     android:theme="@android:style/Theme.Holo"
-    tools:context="iktaniyalol.ru.technicalassistant.interfaces.Graphic">
+    tools:context="iktaniyalol.ru.technicalassistant.interfaces.Graphic"
+    android:orientation="vertical">
 
-    <TextView
-        android:id="@+id/graph_view_label"
+    <com.jjoe64.graphview.GraphView
+        android:id="@+id/graph"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
-        android:textStyle="bold" />
+        android:layout_height="200dp" />
 
 </RelativeLayout>

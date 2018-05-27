@@ -8,7 +8,7 @@ import android.widget.TextView;
 
 import iktaniyalol.ru.technicalassistant.Resh;
 
-public class KorenStepen extends MainActivity {
+public class KorenStepen extends Math {
     Button result;
     public double inp1, inp2, inp3, inp4;
 
