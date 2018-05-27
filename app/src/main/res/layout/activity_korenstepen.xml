@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#edecec"
-    android:theme="@android:style/Theme.Holo"
     tools:context="iktaniyalol.ru.technicalassistant.interfaces.KorenStepen">
 
     <EditText
@@ -106,7 +105,6 @@
         android:layout_below="@+id/input1"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:backgroundTint="@android:color/darker_gray"
         android:text="@string/button2"
         tools:targetApi="lollipop" />
 

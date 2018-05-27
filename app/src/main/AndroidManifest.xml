@@ -17,10 +17,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".Logarifm"
+            android:name="Logarifm"
             android:label="Логарифмы"></activity>
         <activity
-            android:name=".Graphic"
+            android:name="Graphic"
             android:label="Графики функции"></activity>
         <activity
             android:name="KorenStepen"
@@ -43,6 +43,9 @@
         <activity
             android:name="Test"
             android:label="Тесты"></activity>
+        <activity
+            android:name="PreGraph"
+            android:label="Графики функции"></activity>
     </application>
 
 

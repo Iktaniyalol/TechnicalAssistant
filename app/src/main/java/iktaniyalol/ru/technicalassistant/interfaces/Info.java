@@ -31,6 +31,5 @@ public class Info extends MainActivity {
         };
         sys.setOnClickListener(OLSys);
         dey.setOnClickListener(OLDey);
-
     }
 }

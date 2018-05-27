@@ -26,7 +26,7 @@ public class Math extends MainActivity {
         };
         View.OnClickListener OLTheor2 = new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(Math.this, Graphic.class);
+                Intent intent = new Intent(Math.this, PreGraph.class);
                 startActivity(intent);
             }
         };

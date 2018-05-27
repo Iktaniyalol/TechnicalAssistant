@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#edecec"
-    android:theme="@android:style/Theme.Holo"
     tools:context="iktaniyalol.ru.technicalassistant.interfaces.Numbertosystem">
 
     <TextView
@@ -46,7 +45,6 @@
         android:layout_below="@+id/spinner2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="10dp"
-        android:backgroundTint="@android:color/darker_gray"
         android:text="@string/button2"
         tools:targetApi="lollipop" />
 
