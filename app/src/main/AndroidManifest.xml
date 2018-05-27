@@ -46,6 +46,9 @@
         <activity
             android:name="PreGraph"
             android:label="Графики функции"></activity>
+        <activity
+            android:name="AboutMe"
+            android:label="Обо мне"></activity>
     </application>
 
 
