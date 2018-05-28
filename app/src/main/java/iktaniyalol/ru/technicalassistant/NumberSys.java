@@ -216,10 +216,10 @@ public class NumberSys {
                 returnnum = Integer.toBinaryString(result).toUpperCase();
                 break;
             case 1:
-                returnnum = Integer.toString(result).toUpperCase();
+                returnnum = Integer.toOctalString(result).toUpperCase();
                 break;
             case 2:
-                returnnum = Integer.toOctalString(result).toUpperCase();
+                returnnum = Integer.toString(result).toUpperCase();
                 break;
             case 3:
                 returnnum = Integer.toHexString(result).toUpperCase();

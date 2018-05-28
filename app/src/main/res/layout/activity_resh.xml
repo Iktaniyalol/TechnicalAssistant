@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#edecec"
+    android:theme="@android:style/Theme.Holo"
+    tools:context="iktaniyalol.ru.technicalassistant.interfaces.PhysResh">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/razdel"
+            android:textColor="@android:color/holo_blue_light"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:theme="@style/AppTheme" />
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_marginTop="20dp"
+            android:theme="@style/AppTheme"
+            android:visibility="invisible" />
+
+        <EditText
+            android:id="@+id/input4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:ems="20"
+            android:hint="@string/_0"
+            android:inputType="numberDecimal|numberSigned"
+            android:textColor="@android:color/black"
+            android:textColorHighlight="@android:color/darker_gray"
+            android:textColorHint="@android:color/black"
+            android:textColorLink="@android:color/darker_gray"
+            android:textStyle="italic"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</ScrollView>

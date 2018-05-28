@@ -4,6 +4,8 @@ import android.app.ActionBar;
 import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -17,8 +19,7 @@ import com.vansuita.materialabout.views.AboutView;
 
 public class MainActivity extends FragmentActivity {
 
-    Button math, info;
-    ImageButton about;
+    Button math, info, phys, test;
     ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,8 @@ public class MainActivity extends FragmentActivity {
 
         math = findViewById(R.id.math);
         info = findViewById(R.id.info);
-        about = findViewById(R.id.about);
+        phys = findViewById(R.id.phys);
+        test = findViewById(R.id.test);
 
         View.OnClickListener OLMath = new View.OnClickListener() {
             public void onClick(View view) {
@@ -41,14 +43,44 @@ public class MainActivity extends FragmentActivity {
                 startActivity(intent);
             }
         };
-        View.OnClickListener OLAbout = new View.OnClickListener() {
+        View.OnClickListener OLPhys = new View.OnClickListener() {
             public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this, AboutMe.class);
+                Intent intent = new Intent(MainActivity.this, Phys.class);
+                startActivity(intent);
+            }
+        };
+        View.OnClickListener OLTest = new View.OnClickListener() {
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, Test.class);
                 startActivity(intent);
             }
         };
         math.setOnClickListener(OLMath);
         info.setOnClickListener(OLInfo);
-        about.setOnClickListener(OLAbout);
+        phys.setOnClickListener(OLPhys);
+        test.setOnClickListener(OLTest);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.action_about) {
+            Intent intent = new Intent(MainActivity.this, AboutMe.class);
+            startActivity(intent);
+        }
+
+        return super.onOptionsItemSelected(item);
     }
 }

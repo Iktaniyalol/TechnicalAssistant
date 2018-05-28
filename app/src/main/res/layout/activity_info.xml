@@ -16,12 +16,12 @@
             android:id="@+id/resh4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="45dp"
             android:width="1000dp"
             android:height="100dp"
-            android:textColor="@android:color/black"
             android:backgroundTint="@android:color/holo_blue_light"
             android:text="@string/dey"
+            android:textColor="@android:color/black"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="lollipop" />
 

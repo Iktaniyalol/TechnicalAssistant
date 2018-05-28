@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#edecec"
     android:theme="@android:style/Theme.Holo"
-    tools:context="iktaniyalol.ru.technicalassistant.interfaces.MainActivity">
+    tools:context="iktaniyalol.ru.technicalassistant.interfaces.Phys">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,52 +13,67 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/math"
+            android:id="@+id/mechanica"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="45dp"
             android:width="1000dp"
             android:height="100dp"
-            android:textColor="@android:color/black"
             android:backgroundTint="@android:color/holo_blue_light"
-            android:text="@string/math"
+            android:text="@string/mechanica"
+            android:textColor="@android:color/black"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="lollipop" />
 
         <Button
-            android:id="@+id/phys"
+            android:id="@+id/molec"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:width="1000dp"
             android:height="100dp"
-            android:textColor="@android:color/black"
             android:backgroundTint="@android:color/holo_blue_light"
-            android:text="@string/phys"
+            android:text="@string/molec"
+            android:textColor="@android:color/black"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="lollipop" />
+
         <Button
-            android:id="@+id/info"
+            android:id="@+id/electrodin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:width="1000dp"
             android:height="100dp"
-            android:textColor="@android:color/black"
             android:backgroundTint="@android:color/holo_blue_light"
-            android:text="@string/info"
+            android:text="@string/electrodin"
+            android:textColor="@android:color/black"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="lollipop" />
+
         <Button
-            android:id="@+id/test"
+            android:id="@+id/volnykoleb"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:width="1000dp"
             android:height="100dp"
-            android:textColor="@android:color/black"
             android:backgroundTint="@android:color/holo_blue_light"
-            android:text="@string/test"
+            android:text="@string/volnykoleb"
+            android:textColor="@android:color/black"
+            tools:layout_editor_absoluteX="0dp"
+            tools:targetApi="lollipop" />
+
+        <Button
+            android:id="@+id/optica"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:width="1000dp"
+            android:height="100dp"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="@string/optic"
+            android:textColor="@android:color/black"
             tools:layout_editor_absoluteX="0dp"
             tools:targetApi="lollipop" />
 

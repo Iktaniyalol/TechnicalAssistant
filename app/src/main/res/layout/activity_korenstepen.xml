@@ -104,7 +104,7 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/input1"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:text="@string/button2"
         tools:targetApi="lollipop" />
 
@@ -114,12 +114,12 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView4"
         android:layout_below="@+id/resultkr"
-        android:layout_marginTop="14dp"
+        android:layout_marginTop="20dp"
         android:width="200dp"
         android:text="@string/step"
         android:textColor="@android:color/holo_blue_light"
-        android:textStyle="bold"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/textView7"
@@ -127,12 +127,12 @@
         android:layout_height="wrap_content"
         android:layout_alignStart="@+id/textView6"
         android:layout_below="@+id/textView6"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="15dp"
         android:width="70dp"
         android:text="@string/koren"
         android:textColor="@android:color/holo_blue_light"
-        android:textStyle="bold"
-        android:textSize="18sp" />
+        android:textSize="18sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/resultkr2"
@@ -142,7 +142,7 @@
         android:layout_alignBottom="@+id/textView6"
         android:layout_marginStart="14dp"
         android:layout_toEndOf="@+id/textView6"
-        android:text="0"
+        android:text="@string/_0"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 
@@ -152,9 +152,9 @@
         android:layout_height="wrap_content"
         android:layout_alignBaseline="@+id/textView7"
         android:layout_alignBottom="@+id/textView7"
-        android:layout_marginStart="15dp"
+        android:layout_marginStart="14dp"
         android:layout_toEndOf="@+id/textView7"
-        android:text="0"
+        android:text="@string/_0"
         android:textColor="@android:color/black"
         android:textSize="18sp" />
 

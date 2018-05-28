@@ -57,6 +57,7 @@ public class Numberdeysystem extends Info {
         spinner3.setPrompt("Выберите действие:");
         spinner3.setSelection(0);
 
+
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view,

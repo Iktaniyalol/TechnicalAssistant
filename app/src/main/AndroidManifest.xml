@@ -49,6 +49,12 @@
         <activity
             android:name="AboutMe"
             android:label="Обо мне"></activity>
+        <activity
+            android:name="Phys"
+            android:label="Физика"></activity>
+        <activity
+            android:name="PhysResh"
+            android:label="Физика"></activity>
     </application>
 
 
