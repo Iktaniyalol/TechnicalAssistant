@@ -109,6 +109,9 @@ public class SchitGame extends Test implements OnClickListener {
                                 "Вы проиграли! Ваш счет: " + exScore, Toast.LENGTH_LONG);
                         toast.setGravity(Gravity.CENTER, 0, 0);
                         toast.show();
+                        if (!(timercount == null)) {
+                            timercount.cancel();
+                        }
                         this.finish();
                     }
                 }
@@ -137,6 +140,9 @@ public class SchitGame extends Test implements OnClickListener {
     }
 
     private void Question(int level) {
+        if (!(timercount == null)) {
+            timercount.cancel();
+        }
         timer(time);
         answerTxt.setText("?");
         number1 = getNumber(level);
@@ -210,6 +216,7 @@ public class SchitGame extends Test implements OnClickListener {
             public void onFinish() {
                 timer.setText("Время вышло!");
                 popyt = popyt - 1;
+                popytky.setText("Попытки: " + popyt);
                 if (!(popyt == 0)) {
                     Question(level);
                 } else {
@@ -251,7 +258,9 @@ public class SchitGame extends Test implements OnClickListener {
                 "Вы проиграли! Ваш счет: " + getScore(), Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
+        timercount.cancel();
         this.finish();
+
     }
 
     private int getNumber(int level) {
