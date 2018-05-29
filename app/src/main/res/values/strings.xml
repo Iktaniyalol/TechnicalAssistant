@@ -3,7 +3,7 @@
     <string name="math">Математика</string>
     <string name="phys">Физика</string>
     <string name="info">Информатика</string>
-    <string name="test">Тесты (в разработке)</string>
+    <string name="test">Тесты</string>
     <string name="theor">Логарифмы</string>
     <string name="theor2">Графики функции</string>
     <string name="sqrt">Корень и степень числа</string>
@@ -54,4 +54,18 @@
     <string name="dalee">Далее</string>
     <string name="dannye">Введите данные:</string>
     <string name="_0">0</string>
+    <string name="schit">Считалочка</string>
+    <string name="_9">9</string>
+    <string name="_6">6</string>
+    <string name="_1">1</string>
+    <string name="_3">3</string>
+    <string name="enter">Ввести</string>
+    <string name="popyt">Попытки: 3</string>
+    <string name="schet">Счет: 0</string>
+    <string name="_0_0">0 + 0 =</string>
+    <string name="_8">8</string>
+    <string name="_5">5</string>
+    <string name="_4">4</string>
+    <string name="_7">7</string>
+    <string name="c">C</string>
 </resources>

@@ -34,6 +34,7 @@ public class Math extends MainActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(Math.this, KorenStepen.class);
                 startActivity(intent);
+
             }
         };
         View.OnClickListener OLUrav = new View.OnClickListener() {

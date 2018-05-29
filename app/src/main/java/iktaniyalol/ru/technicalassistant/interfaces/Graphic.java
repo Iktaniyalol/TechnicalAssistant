@@ -138,26 +138,71 @@ public class Graphic extends Math {
                 k = PreGraph.inp1;
                 maxkord = PreGraph.inp2;
                 x = -4;
-                j = 32;
+                j = 128;
                 if (!(maxkord == 0)) {
                     x = maxkord * (-1);
-                    j = (int) ((maxkord / 0.125));
+                    j = (int) ((maxkord / 0.03125));
                 }
                 dataPoints = new DataPoint[j];
                 dataPoints1 = new DataPoint[j];
                 for (int i = 0; i < j; i++) {
                     if (!(x == 0)) {
                         dataPoints[i] = new DataPoint(x, k / x);
-                        x = x + 0.125;
+                        x = x + 0.03125;
                     } else {
                         break;
                     }
                 }
-                x = 0.125;
+                x = 0.03125;
                 for (int i = 0; i < j; i++) {
                     if (!(x == 0)) {
                         dataPoints1[i] = new DataPoint(x, k / x);
-                        x = x + 0.125;
+                        x = x + 0.03125;
+                    } else {
+                        break;
+                    }
+                }
+                series = new LineGraphSeries<>(dataPoints);
+                series1 = new LineGraphSeries<>(dataPoints1);
+                graph.addSeries(series);
+                graph.addSeries(series1);
+                graph.getViewport().setYAxisBoundsManual(true);
+                graph.getViewport().setXAxisBoundsManual(true);
+                if (!(maxkord == 0)) {
+                    graph.getViewport().setYAxisBoundsManual(true);
+                    graph.getViewport().setMaxY(maxkord);
+                    graph.getViewport().setMinY(maxkord * (-1));
+                    graph.getViewport().setXAxisBoundsManual(true);
+                    graph.getViewport().setMaxX(maxkord);
+                    graph.getViewport().setMinX(maxkord * (-1));
+                }
+                break;
+            case 6:
+                k = PreGraph.inp1;
+                b = PreGraph.inp2;
+                c = PreGraph.inp3;
+                maxkord = PreGraph.inp4;
+                x = -4;
+                j = 128;
+                if (!(maxkord == 0)) {
+                    x = maxkord * (-1);
+                    j = (int) ((maxkord / 0.03125));
+                }
+                dataPoints = new DataPoint[j];
+                dataPoints1 = new DataPoint[j];
+                for (int i = 0; i < j; i++) {
+                    if (!(x == 0)) {
+                        dataPoints[i] = new DataPoint(x, (k / (x + b)) + c);
+                        x = x + 0.03125;
+                    } else {
+                        break;
+                    }
+                }
+                x = 0.03125;
+                for (int i = 0; i < j; i++) {
+                    if (!(x == 0)) {
+                        dataPoints1[i] = new DataPoint(x, (k / (x + b)) + c);
+                        x = x + 0.03125;
                     } else {
                         break;
                     }

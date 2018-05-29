@@ -13,7 +13,7 @@ import android.widget.TextView;
 
 
 public class PreGraph extends Math {
-    String[] data = {"не выбрано", "линейный (y = kx)", "линейный (y = kx + b)", "парабола (y = ax²)", "парабола (y = ax² + bx + c)", "гипербола (y = k/x)", "гипербола (y = k/(a*x + b) + c"};
+    String[] data = {"не выбрано", "линейный (y = kx)", "линейный (y = kx + b)", "парабола (y = ax²)", "парабола (y = ax² + bx + c)"};
     static int number;
     Button result;
     public static double inp1, inp2, inp3, inp4, inp5;
@@ -75,8 +75,7 @@ public class PreGraph extends Math {
                         one.setVisibility(View.VISIBLE);
                         one.setHint("Введите k");
                         two.setVisibility(View.VISIBLE);
-                        two.setInputType(InputType.TYPE_CLASS_NUMBER);
-                        two.setInputType(InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                        two.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
                         two.setHint("Введите максимальный интервал по X и Y(не обязательно)");
                         three.setVisibility(View.INVISIBLE);
                         four.setVisibility(View.INVISIBLE);
@@ -98,10 +97,10 @@ public class PreGraph extends Math {
                         one.setVisibility(View.VISIBLE);
                         one.setHint("Введите k");
                         two.setVisibility(View.VISIBLE);
-                        two.setInputType(InputType.TYPE_NUMBER_FLAG_SIGNED | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                        two.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_SIGNED | InputType.TYPE_NUMBER_FLAG_DECIMAL);
                         two.setHint("Введите b");
                         three.setVisibility(View.VISIBLE);
-                        three.setInputType(InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                        three.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
                         three.setHint("Введите максимальный интервал по X и Y(не обязательно)");
                         four.setVisibility(View.INVISIBLE);
                         five.setVisibility(View.INVISIBLE);
@@ -122,7 +121,7 @@ public class PreGraph extends Math {
                         one.setVisibility(View.VISIBLE);
                         one.setHint("Введите a");
                         two.setVisibility(View.VISIBLE);
-                        two.setInputType(InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                        two.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
                         two.setHint("Введите максимальный интервал по X и Y(не обязательно)");
                         three.setVisibility(View.INVISIBLE);
                         four.setVisibility(View.INVISIBLE);
@@ -144,12 +143,12 @@ public class PreGraph extends Math {
                         one.setVisibility(View.VISIBLE);
                         one.setHint("Введите a");
                         two.setVisibility(View.VISIBLE);
-                        two.setInputType(InputType.TYPE_NUMBER_FLAG_SIGNED | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                        two.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_SIGNED | InputType.TYPE_NUMBER_FLAG_DECIMAL);
                         two.setHint("Введите b");
                         three.setVisibility(View.VISIBLE);
                         three.setHint("Введите c");
                         four.setVisibility(View.VISIBLE);
-                        four.setInputType(InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                        four.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
                         four.setHint("Введите максимальный интервал по X и Y(не обязательно)");
                         five.setVisibility(View.INVISIBLE);
                         break;
@@ -169,10 +168,35 @@ public class PreGraph extends Math {
                         one.setVisibility(View.VISIBLE);
                         one.setHint("Введите k");
                         two.setVisibility(View.VISIBLE);
-                        two.setInputType(InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                        two.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
                         two.setHint("Введите максимальный интервал по X и Y(не обязательно)");
                         three.setVisibility(View.INVISIBLE);
                         four.setVisibility(View.INVISIBLE);
+                        five.setVisibility(View.INVISIBLE);
+                        break;
+                    case 6:
+                        inp1 = 0;
+                        inp2 = 0;
+                        inp3 = 0;
+                        inp4 = 0;
+                        inp5 = 0;
+                        one.setText("");
+                        two.setText("");
+                        three.setText("");
+                        four.setText("");
+                        five.setText("");
+                        info.setVisibility(View.VISIBLE);
+                        info.setText("Введите данные графика y = k/(x + b) + c:");
+                        one.setVisibility(View.VISIBLE);
+                        one.setHint("Введите k");
+                        two.setVisibility(View.VISIBLE);
+                        two.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_SIGNED | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                        two.setHint("Введите b");
+                        three.setVisibility(View.VISIBLE);
+                        three.setHint("Введите c");
+                        four.setVisibility(View.VISIBLE);
+                        four.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                        four.setHint("Введите максимальный интервал по X и Y(не обязательно)");
                         five.setVisibility(View.INVISIBLE);
                         break;
                 }
@@ -259,6 +283,28 @@ public class PreGraph extends Math {
                             Intent intent = new Intent(PreGraph.this, Graphic.class);
                             startActivity(intent);
                         }
+                        break;
+                    case 6:
+                        if (!one.getText().toString().equals("")) {
+                            inp1 = Double.parseDouble(one.getText().toString());
+                        }
+                        if (!two.getText().toString().equals("")) {
+                            inp2 = Double.parseDouble(two.getText().toString());
+                        } else {
+                            inp2 = 0;
+                        }
+                        if (!three.getText().toString().equals("")) {
+                            inp3 = Double.parseDouble(three.getText().toString());
+                        } else {
+                            inp3 = 0;
+                        }
+                        if (!four.getText().toString().equals("")) {
+                            inp4 = Double.parseDouble(four.getText().toString());
+                        } else {
+                            inp4 = 0;
+                        }
+                        Intent intent = new Intent(PreGraph.this, Graphic.class);
+                        startActivity(intent);
                         break;
                 }
 

@@ -10,5 +10,19 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"></LinearLayout>
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/schitbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="45dp"
+            android:width="1000dp"
+            android:height="100dp"
+            android:textColor="@android:color/black"
+            android:backgroundTint="@android:color/holo_blue_light"
+            android:text="@string/schit"
+            tools:layout_editor_absoluteX="0dp"
+            tools:targetApi="lollipop" />
+    </LinearLayout>
 </ScrollView>

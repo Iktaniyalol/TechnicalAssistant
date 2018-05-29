@@ -55,6 +55,9 @@
         <activity
             android:name="PhysResh"
             android:label="Физика"></activity>
+        <activity
+            android:name="SchitGame"
+            android:label="Считалочка"></activity>
     </application>
 
 

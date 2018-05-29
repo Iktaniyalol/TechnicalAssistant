@@ -58,6 +58,7 @@
         android:ems="20"
         android:hint="@string/textsys"
         android:inputType="textCapCharacters"
+        android:digits="0123456789ABCDEF-"
         android:labelFor="@+id/input1"
         android:textColor="@android:color/black"
         android:textColorHighlight="@android:color/darker_gray"
@@ -72,7 +73,7 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/infotext"
         android:layout_marginTop="10dp"
-        android:theme="@style/AppTheme"></Spinner>
+        android:theme="@style/AppTheme" />
 
     <TextView
         android:id="@+id/textView6"
@@ -105,7 +106,6 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/infotext1"
         android:layout_marginTop="10dp"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme" />
 
-    </Spinner>
 </RelativeLayout>
