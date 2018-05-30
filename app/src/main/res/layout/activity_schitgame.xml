@@ -20,10 +20,10 @@
             android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:layout_weight="1"
+            android:background="#edecec"
             android:gravity="center"
             android:padding="5dp"
-            android:background="#edecec"
-            android:text="Время: 60 с"
+            android:text="@string/time"
             android:textColor="@android:color/holo_blue_light"
             android:textSize="20sp"
             android:textStyle="bold|italic" />
@@ -65,7 +65,7 @@
 
         <TextView
             android:id="@+id/question"
-            android:layout_width="0dp"
+            android:layout_width="75dp"
             android:layout_height="match_parent"
             android:layout_marginBottom="2dp"
             android:layout_marginStart="2dp"
@@ -74,9 +74,9 @@
             android:background="#edecec"
             android:gravity="center|right"
             android:padding="5dp"
-            android:text="@string/_0_0"
+            android:text="-500 + -500 ="
             android:textColor="@android:color/holo_green_dark"
-            android:textSize="30sp"
+            android:textSize="22sp"
             android:textStyle="bold|italic" />
 
         <TextView
@@ -92,13 +92,13 @@
             android:padding="5dp"
             android:text="?"
             android:textColor="@android:color/holo_green_dark"
-            android:textSize="30sp"
+            android:textSize="22sp"
             android:textStyle="bold|italic" />
 
         <Button
             android:id="@+id/cancel"
             style="@android:style/ButtonBar"
-            android:layout_width="0dp"
+            android:layout_width="35dp"
             android:layout_height="match_parent"
             android:layout_margin="1dp"
             android:layout_weight="1"
@@ -309,7 +309,7 @@
             android:gravity="center"
             android:padding="5dp"
             android:tag="-"
-            android:text="-"
+            android:text="@string/minus"
             android:textColor="@android:color/black"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -325,7 +325,7 @@
             android:gravity="center"
             android:padding="5dp"
             android:tag="enter"
-            android:text="Ввести"
+            android:text="@string/enter"
             android:textColor="@android:color/black"
             android:textSize="25sp"
             android:textStyle="bold" />

@@ -123,7 +123,7 @@ public class SchitGame extends Test implements OnClickListener {
             if (answerTxt.getText().toString().equals("?")) {
                 answerTxt.setText("-");
             } else {
-                if (!(answerTxt.getText().toString().charAt(0) == '-')) {
+                if (!(answerTxt.getText().toString().charAt(0) == '-') && !(answerTxt.getText().toString().equals("0"))) {
                     answerTxt.setText("-" + answerTxt.getText().toString());
                 }
 
@@ -131,10 +131,19 @@ public class SchitGame extends Test implements OnClickListener {
 
         } else {
             int enteredNum = Integer.parseInt(view.getTag().toString());
+            if (view.getId() == R.id.zero && answerTxt.getText().toString().equals("-")) {
+                answerTxt.setText("" + enteredNum);
+            }
             if (answerTxt.getText().toString().equals("?")) {
                 answerTxt.setText("" + enteredNum);
+            } else if (answerTxt.getText().toString().equals("0")) {
+                answerTxt.setText("" + enteredNum);
             } else {
-                answerTxt.setText(answerTxt.getText().toString() + enteredNum);
+                if (answerTxt.getText().toString().charAt(0) == '-' && (answerTxt.getText().toString().length() < 5)) {
+                    answerTxt.setText(answerTxt.getText().toString() + enteredNum);
+                } else if (answerTxt.getText().toString().length() < 4) {
+                    answerTxt.setText(answerTxt.getText().toString() + enteredNum);
+                }
             }
         }
     }
@@ -209,7 +218,7 @@ public class SchitGame extends Test implements OnClickListener {
         timercount = new CountDownTimer(time, 1000) {
             @Override
             public void onTick(long millisUntilFinished) {
-                timer.setText("Время: " + (int) millisUntilFinished / 1000 + " c");
+                timer.setText("Время: " + (int) millisUntilFinished / 1000);
             }
 
             @Override
@@ -234,7 +243,7 @@ public class SchitGame extends Test implements OnClickListener {
     private void openQuitDialog() {
         AlertDialog.Builder quitDialog = new AlertDialog.Builder(
                 SchitGame.this);
-        quitDialog.setTitle("Вы уверены что хотите выйти? Прогресс и ваш счёт не сохранится.");
+        quitDialog.setTitle("Вы уверены что хотите выйти?\nВаш счет не сохранится.");
 
         quitDialog.setPositiveButton("Да", new DialogInterface.OnClickListener() {
             @Override
