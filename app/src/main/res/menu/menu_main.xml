@@ -25,7 +25,7 @@
         android:icon="@android:drawable/ic_menu_help"
         android:orderInCategory="100"
         android:title="Авторизоваться"
-        android:visible="true"
+        android:visible="false"
         app:showAsAction="always" />
 
 </menu>

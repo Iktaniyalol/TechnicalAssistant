@@ -67,6 +67,7 @@ public class SchitGame extends Test implements OnClickListener {
         if (Test.level >= 0) {
             level = Test.level;
         }
+        random = new Random();
         switch (level) {
             case 0:
                 popyt = 3;
@@ -84,9 +85,8 @@ public class SchitGame extends Test implements OnClickListener {
                 time = 15000;
                 break;
         }
-
-        random = new Random();
         Question(level);
+
 
     }
 
@@ -154,11 +154,11 @@ public class SchitGame extends Test implements OnClickListener {
         }
         timer(time);
         answerTxt.setText("?");
-        number1 = getNumber(level);
-        number2 = getNumber(level);
         switch (level) {
             case 0:
                 operator = random.nextInt(operators.length);
+                number1 = getNumber(level, operator);
+                number2 = getNumber(level, operator);
                 switch (operator) {
                     case 0:
                         answer = number1 + number2;
@@ -169,11 +169,16 @@ public class SchitGame extends Test implements OnClickListener {
                     default:
                         break;
                 }
-
-                question.setText(number1 + " " + operators[operator] + " " + number2 + " =");
+                if (number2 >= 0) {
+                    question.setText(number1 + " " + operators[operator] + " " + number2 + " =");
+                } else {
+                    question.setText(number1 + " " + operators[operator] + " (" + number2 + ") =");
+                }
                 break;
             case 1:
                 operator = random.nextInt(operators.length);
+                number1 = getNumber(level, operator);
+                number2 = getNumber(level, operator);
                 switch (operator) {
                     case 0:
                         answer = number1 + number2;
@@ -184,14 +189,21 @@ public class SchitGame extends Test implements OnClickListener {
                     default:
                         break;
                 }
-                question.setText(number1 + " " + operators[operator] + " " + number2 + " =");
+                if (number2 >= 0) {
+                    question.setText(number1 + " " + operators[operator] + " " + number2 + " =");
+                } else {
+                    question.setText(number1 + " " + operators[operator] + " (" + number2 + ") =");
+                }
+
                 break;
             case 2:
                 operator = random.nextInt(operatorshard.length);
+                number1 = getNumber(level, operator);
+                number2 = getNumber(level, operator);
                 if (operator == 3) {
                     while (!((number1 % number2) == 0) || (number1 == number2)) {
-                        number1 = getNumber(level);
-                        number2 = getNumber(level);
+                        number1 = getNumber(level, operator);
+                        number2 = getNumber(level, operator);
                     }
                 }
                 switch (operator) {
@@ -210,7 +222,11 @@ public class SchitGame extends Test implements OnClickListener {
                     default:
                         break;
                 }
-                question.setText(number1 + " " + operatorshard[operator] + " " + number2 + " =");
+                if (number2 >= 0) {
+                    question.setText(number1 + " " + operatorshard[operator] + " " + number2 + " =");
+                } else {
+                    question.setText(number1 + " " + operatorshard[operator] + " (" + number2 + ") =");
+                }
         }
     }
 
@@ -272,7 +288,7 @@ public class SchitGame extends Test implements OnClickListener {
 
     }
 
-    private int getNumber(int level) {
+    private int getNumber(int level, int operator) {
         int number = 0;
         boolean b = random.nextBoolean();
         switch (level) {
@@ -291,10 +307,18 @@ public class SchitGame extends Test implements OnClickListener {
                 }
                 break;
             case 2:
-                if (b) {
-                    number = random.nextInt(500);
+                if (operator == 0 || operator == 1) {
+                    if (b) {
+                        number = random.nextInt(500);
+                    } else {
+                        number = random.nextInt(500) * (-1);
+                    }
                 } else {
-                    number = random.nextInt(500) * (-1);
+                    if (b) {
+                        number = random.nextInt(99);
+                    } else {
+                        number = random.nextInt(99) * (-1);
+                    }
                 }
                 break;
         }

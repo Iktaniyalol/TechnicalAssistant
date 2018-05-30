@@ -76,7 +76,7 @@ public class PreGraph extends Math {
                         one.setHint("Введите k");
                         two.setVisibility(View.VISIBLE);
                         two.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
-                        two.setHint("Введите максимальный интервал по X и Y(не обязательно)");
+                        two.setHint("Введите интервал по X и Y(не обязательно)");
                         three.setVisibility(View.INVISIBLE);
                         four.setVisibility(View.INVISIBLE);
                         five.setVisibility(View.INVISIBLE);
@@ -212,10 +212,14 @@ public class PreGraph extends Math {
                     case 1:
                         if (!one.getText().toString().equals("")) {
                             inp1 = Double.parseDouble(one.getText().toString());
+
                             if (!two.getText().toString().equals("")) {
                                 inp2 = Double.parseDouble(two.getText().toString());
                             } else {
                                 inp2 = 0;
+                            }
+                            if (inp1 > 10000 || inp1 < -10000 || inp2 > 10000) {
+                                return;
                             }
                             Intent intent = new Intent(PreGraph.this, Graphic.class);
                             startActivity(intent);
@@ -230,6 +234,9 @@ public class PreGraph extends Math {
                             } else {
                                 inp3 = 0;
                             }
+                            if (inp1 > 10000 || inp1 < -10000 || inp2 > 10000 || inp2 < -10000 || inp3 > 10000) {
+                                return;
+                            }
                             Intent intent = new Intent(PreGraph.this, Graphic.class);
                             startActivity(intent);
                         }
@@ -241,6 +248,9 @@ public class PreGraph extends Math {
                                 inp2 = Double.parseDouble(two.getText().toString());
                             } else {
                                 inp2 = 0;
+                            }
+                            if (inp1 > 10000 || inp1 < -10000 || inp2 > 10000) {
+                                return;
                             }
                             if (!(inp1 == 0)) {
                                 Intent intent = new Intent(PreGraph.this, Graphic.class);
@@ -266,6 +276,9 @@ public class PreGraph extends Math {
                             inp4 = Double.parseDouble(four.getText().toString());
                         } else {
                             inp4 = 0;
+                        }
+                        if (inp1 > 10000 || inp1 < -10000 || inp2 > 10000 || inp2 < -10000 || inp3 > 10000 || inp3 < -10000 || inp4 > 10000) {
+                            return;
                         }
                         if (!(inp1 == 0)) {
                             Intent intent = new Intent(PreGraph.this, Graphic.class);

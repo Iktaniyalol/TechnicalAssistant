@@ -58,6 +58,9 @@
         <activity
             android:name="SchitGame"
             android:label="Считалочка"></activity>
+        <activity
+            android:name="Auth"
+            android:label="Авторизация"></activity>
     </application>
 
 
