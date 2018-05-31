@@ -103,7 +103,6 @@ public class SchitGame extends Test implements OnClickListener {
                 } else {
                     popyt = popyt - 1;
                     popytky.setText("Попытки: " + popyt);
-                    scoreTxt.setText("Счет: 0");
                     if (popyt == 0) {
                         Toast toast = Toast.makeText(getApplicationContext(),
                                 "Вы проиграли! Ваш счет: " + exScore, Toast.LENGTH_LONG);
