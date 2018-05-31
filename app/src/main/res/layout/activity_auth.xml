@@ -85,4 +85,15 @@
         android:layout_marginTop="40dp"
         android:text="Войти" />
 
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Тестовой аккаунт:\nЛогин test\nПароль test"
+        android:layout_below="@+id/button_login"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/holo_blue_light"
+        android:textStyle="bold" />
+
 </RelativeLayout>
