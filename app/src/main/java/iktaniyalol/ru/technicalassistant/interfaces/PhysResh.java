@@ -13,7 +13,7 @@ import java.util.ArrayList;
 import iktaniyalol.ru.technicalassistant.ItemData;
 import iktaniyalol.ru.technicalassistant.SpinnerAdapter;
 
-public class PhysResh extends MainActivity {
+public class PhysResh extends Phys {
 
     public static String[][] data = {
             {"Не выбрано", "Кинематика", "Динамика", "Статика", "Законы сохранения мех. энергии", "Давление жидкости и газа"},
