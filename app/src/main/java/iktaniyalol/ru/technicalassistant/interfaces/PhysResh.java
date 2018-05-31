@@ -37,16 +37,23 @@ public class PhysResh extends MainActivity {
             {R.drawable.term1, R.drawable.term2, R.drawable.term3, R.drawable.term4, R.drawable.term5, R.drawable.term6, R.drawable.term7, R.drawable.term8, R.drawable.term9},
     };
     private static Integer[][] Elec = {
-            {R.drawable.kinetic1, R.drawable.kinetic2},
-            {R.drawable.din1},
+            {R.drawable.elec1, R.drawable.elec2, R.drawable.elec3, R.drawable.elec4, R.drawable.elec5, R.drawable.elec6, R.drawable.elec7, R.drawable.elec8, R.drawable.elec9, R.drawable.elec10, R.drawable.elec11, R.drawable.elec12, R.drawable.elec13, R.drawable.elec14, R.drawable.elec15, R.drawable.elec16, R.drawable.elec17, R.drawable.elec18, R.drawable.elec19, R.drawable.elec20, R.drawable.elec21, R.drawable.elec22, R.drawable.elec23, R.drawable.elec24, R.drawable.elec25, R.drawable.elec26, R.drawable.elec27, R.drawable.elec28, R.drawable.elec29, R.drawable.elec30, R.drawable.elec31, R.drawable.elec32, R.drawable.elec33, R.drawable.elec34, R.drawable.elec35, R.drawable.elec36},
+            {R.drawable.post1, R.drawable.post2, R.drawable.post3, R.drawable.post4, R.drawable.post5, R.drawable.post6, R.drawable.post7, R.drawable.post8, R.drawable.post9, R.drawable.post10, R.drawable.post11, R.drawable.post12, R.drawable.post13, R.drawable.post14, R.drawable.post15, R.drawable.post16, R.drawable.post17, R.drawable.post18, R.drawable.post19, R.drawable.post20, R.drawable.post21, R.drawable.post22, R.drawable.post23, R.drawable.post24, R.drawable.post25, R.drawable.post26, R.drawable.post27, R.drawable.post28, R.drawable.post29},
+            {R.drawable.mag1, R.drawable.mag2, R.drawable.mag3, R.drawable.mag4, R.drawable.mag5, R.drawable.mag6, R.drawable.mag7, R.drawable.mag8, R.drawable.mag9, R.drawable.mag10, R.drawable.mag11, R.drawable.mag12, R.drawable.mag13, R.drawable.mag14, R.drawable.mag15, R.drawable.mag16, R.drawable.mag17, R.drawable.mag18, R.drawable.mag19, R.drawable.mag20, R.drawable.mag21, R.drawable.mag22, R.drawable.mag23, R.drawable.mag24},
+            {R.drawable.ind1, R.drawable.ind2, R.drawable.ind3, R.drawable.ind4, R.drawable.ind5, R.drawable.ind6, R.drawable.ind7, R.drawable.ind8, R.drawable.ind9, R.drawable.ind10, R.drawable.ind11, R.drawable.ind12, R.drawable.ind13, R.drawable.ind14, R.drawable.ind15, R.drawable.ind16},
+            {R.drawable.met1, R.drawable.met2, R.drawable.met3, R.drawable.met4, R.drawable.met5, R.drawable.met6, R.drawable.met7, R.drawable.met8, R.drawable.met9, R.drawable.met10, R.drawable.met11, R.drawable.met12},
     };
     private static Integer[][] Kol = {
-            {R.drawable.kinetic1, R.drawable.kinetic2},
-            {R.drawable.din1},
+            {R.drawable.mk1, R.drawable.mk2, R.drawable.mk3, R.drawable.mk4, R.drawable.mk5, R.drawable.mk6, R.drawable.mk7, R.drawable.mk8, R.drawable.mk9, R.drawable.mk10, R.drawable.mk11, R.drawable.mk12, R.drawable.mk13, R.drawable.mk14, R.drawable.mk15, R.drawable.mk16, R.drawable.mk17, R.drawable.mk18, R.drawable.mk19, R.drawable.mk20, R.drawable.mk21, R.drawable.mk22, R.drawable.mk23, R.drawable.mk24, R.drawable.mk25, R.drawable.mk26, R.drawable.mk27, R.drawable.mk28, R.drawable.mk29},
+            {R.drawable.mvol1, R.drawable.mvol2, R.drawable.mvol3, R.drawable.mvol4, R.drawable.mvol5},
+            {R.drawable.elk1, R.drawable.elk2, R.drawable.elk3, R.drawable.elk4, R.drawable.elk5, R.drawable.elk6},
+            {R.drawable.pert1, R.drawable.pert2, R.drawable.pert3, R.drawable.pert4, R.drawable.pert5, R.drawable.pert6, R.drawable.pert7, R.drawable.pert8, R.drawable.pert9, R.drawable.pert10, R.drawable.pert11, R.drawable.pert12, R.drawable.pert13, R.drawable.pert14, R.drawable.pert15, R.drawable.pert16, R.drawable.pert17, R.drawable.pert18},
+            {R.drawable.elv1, R.drawable.elv2, R.drawable.elv3, R.drawable.elv4, R.drawable.elv5, R.drawable.elv6, R.drawable.elv7},
     };
     private static Integer[][] Opt = {
-            {R.drawable.kinetic1, R.drawable.kinetic2},
-            {R.drawable.din1},
+            {R.drawable.phot1, R.drawable.phot2, R.drawable.phot3},
+            {R.drawable.geo1, R.drawable.geo2, R.drawable.geo3, R.drawable.geo4, R.drawable.geo5, R.drawable.geo6, R.drawable.geo7, R.drawable.geo8, R.drawable.geo9, R.drawable.geo10, R.drawable.geo11, R.drawable.geo12, R.drawable.geo13, R.drawable.geo14, R.drawable.geo15, R.drawable.geo16, R.drawable.geo17, R.drawable.geo18, R.drawable.geo19, R.drawable.geo20, R.drawable.geo21, R.drawable.geo22, R.drawable.geo23},
+            {R.drawable.vol1, R.drawable.vol2, R.drawable.vol3, R.drawable.vol4, R.drawable.vol5, R.drawable.vol6, R.drawable.vol7, R.drawable.vol8, R.drawable.vol9, R.drawable.vol10},
     };
     public static int tema;
 
