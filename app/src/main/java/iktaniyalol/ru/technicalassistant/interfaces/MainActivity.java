@@ -1,7 +1,9 @@
 package iktaniyalol.ru.technicalassistant.interfaces;
 
 import android.app.ActionBar;
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -16,16 +18,18 @@ import android.widget.ScrollView;
 import com.vansuita.materialabout.builder.AboutBuilder;
 import com.vansuita.materialabout.views.AboutView;
 
+import static iktaniyalol.ru.technicalassistant.interfaces.SchitGame.GAME_PREFS;
+
 
 public class MainActivity extends FragmentActivity {
-
+    public static SharedPreferences gamePrefs;
     Button math, info, phys, test;
     ViewGroup.LayoutParams lp = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        gamePrefs = getSharedPreferences(GAME_PREFS, Context.MODE_PRIVATE);
         math = findViewById(R.id.math);
         info = findViewById(R.id.info);
         phys = findViewById(R.id.phys);
@@ -78,6 +82,10 @@ public class MainActivity extends FragmentActivity {
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_about) {
             Intent intent = new Intent(MainActivity.this, AboutMe.class);
+            startActivity(intent);
+        }
+        if (id == R.id.action_profile) {
+            Intent intent = new Intent(MainActivity.this, Profile.class);
             startActivity(intent);
         }
 

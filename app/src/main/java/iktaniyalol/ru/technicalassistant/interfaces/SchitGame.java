@@ -1,10 +1,13 @@
 package iktaniyalol.ru.technicalassistant.interfaces;
 
+import java.util.Collections;
 import java.util.Random;
 
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.CountDownTimer;
 import android.view.Gravity;
@@ -23,6 +26,10 @@ public class SchitGame extends Test implements OnClickListener {
 
     private Random random;
 
+    public static final String GAME_PREFS = "Scoresave";
+    public static final String GAME_PREFS_EASY_SCORE = "EASY";
+    public static final String GAME_PREFS_MEDIUM_SCORE = "MEDIUM";
+    public static final String GAME_PREFS_HARD_SCORE = "HARD";
     private TextView question, answerTxt, scoreTxt, popytky, timer;
     private Button one, two, three, four, five, six, seven, eight, nine, zero,
             enter, cancel, minus;
@@ -97,21 +104,14 @@ public class SchitGame extends Test implements OnClickListener {
             String answerContent = answerTxt.getText().toString();
             if (!answerContent.equals("") && !answerContent.equals("?") && !answerContent.equals("-")) {
                 int enteredAnswer = Integer.parseInt(answerContent);
-                int exScore = getScore();
+                int exScore = getScoreinactivity();
                 if (enteredAnswer == answer) {
                     scoreTxt.setText("Счет: " + (exScore + 1));
                 } else {
                     popyt = popyt - 1;
                     popytky.setText("Попытки: " + popyt);
                     if (popyt == 0) {
-                        Toast toast = Toast.makeText(getApplicationContext(),
-                                "Вы проиграли! Ваш счет: " + exScore, Toast.LENGTH_LONG);
-                        toast.setGravity(Gravity.CENTER, 0, 0);
-                        toast.show();
-                        if (!(timercount == null)) {
-                            timercount.cancel();
-                        }
-                        this.finish();
+                        finished();
                     }
                 }
                 Question(level);
@@ -258,13 +258,12 @@ public class SchitGame extends Test implements OnClickListener {
     private void openQuitDialog() {
         AlertDialog.Builder quitDialog = new AlertDialog.Builder(
                 SchitGame.this);
-        quitDialog.setTitle("Вы уверены что хотите выйти?\nВаш счет не сохранится.");
+        quitDialog.setTitle("Вы уверены что хотите выйти?\n");
 
         quitDialog.setPositiveButton("Да", new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface dialog, int which) {
-                timercount.cancel();
-                finish();
+                finished();
             }
         });
 
@@ -278,11 +277,15 @@ public class SchitGame extends Test implements OnClickListener {
     }
 
     private void finished() {
+        int Score = getScoreinactivity();
         Toast toast = Toast.makeText(getApplicationContext(),
-                "Вы проиграли! Ваш счет: " + getScore(), Toast.LENGTH_LONG);
+                "Вы проиграли! Ваш счет: " + Score, Toast.LENGTH_LONG);
         toast.setGravity(Gravity.CENTER, 0, 0);
         toast.show();
-        timercount.cancel();
+        if (!(timercount == null)) {
+            timercount.cancel();
+        }
+        saveScore(Score, level);
         this.finish();
 
     }
@@ -324,7 +327,50 @@ public class SchitGame extends Test implements OnClickListener {
         return number;
     }
 
-    private int getScore() {
+
+    public void saveScore(int score, int level) {
+        String StrScore = Integer.toString(score);
+        SharedPreferences.Editor editor = gamePrefs.edit();
+        switch (level) {
+            case 0:
+                editor.putString(GAME_PREFS_EASY_SCORE, StrScore);
+                editor.apply();
+                break;
+            case 1:
+                editor.putString(GAME_PREFS_MEDIUM_SCORE, StrScore);
+                editor.apply();
+                break;
+            case 2:
+                editor.putString(GAME_PREFS_HARD_SCORE, StrScore);
+                editor.apply();
+                break;
+        }
+
+    }
+
+    public static String getScore(int level) {
+        String result = "0";
+        switch (level) {
+            case 0:
+                if (gamePrefs.contains(GAME_PREFS_EASY_SCORE)) {
+                    result = gamePrefs.getString(GAME_PREFS_EASY_SCORE, "");
+                }
+                break;
+            case 1:
+                if (gamePrefs.contains(GAME_PREFS_MEDIUM_SCORE)) {
+                    result = gamePrefs.getString(GAME_PREFS_MEDIUM_SCORE, "");
+                }
+                break;
+            case 2:
+                if (gamePrefs.contains(GAME_PREFS_HARD_SCORE)) {
+                    result = gamePrefs.getString(GAME_PREFS_HARD_SCORE, "");
+                }
+                break;
+        }
+        return result;
+    }
+
+    private int getScoreinactivity() {
         String scoreStr = scoreTxt.getText().toString();
         return Integer.parseInt(scoreStr.substring(scoreStr.lastIndexOf(" ") + 1));
     }

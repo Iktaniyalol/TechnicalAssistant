@@ -14,6 +14,7 @@ import iktaniyalol.ru.technicalassistant.ItemData;
 import iktaniyalol.ru.technicalassistant.SpinnerAdapter;
 
 public class PhysResh extends MainActivity {
+
     public static String[][] data = {
             {"Не выбрано", "Кинематика", "Динамика", "Статика", "Законы сохранения мех. энергии", "Давление жидкости и газа"},
             {"Не выбрано", "Молекулярная кинетика", "Тепловые явления", "Пар, жидкости и твёрдое состояние", "Термодинамика"},
