@@ -11,13 +11,16 @@
         android:supportsRtl="true"
         android:theme="@android:style/Theme.Holo.Light">
         <activity
-            android:name="MainActivity"
-            android:label="@string/app_name">
+            android:name="Auth"
+            android:label="Авторизация">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="MainActivity"
+            android:label="@string/app_name"></activity>
         <activity
             android:name="Logarifm"
             android:label="Логарифмы"></activity>
@@ -60,9 +63,6 @@
         <activity
             android:name="SchitGame"
             android:label="Считалочка"></activity>
-        <activity
-            android:name="Auth"
-            android:label="Авторизация"></activity>
         <activity
             android:name="Profile"
             android:label="Ваш профиль"></activity>
